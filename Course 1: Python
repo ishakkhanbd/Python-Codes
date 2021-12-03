@@ -1,0 +1,34 @@
+#Problem 1: Use for, .split(), and if to create a Statement that will print out words that start with 's':
+Code: 
+st = 'Print only the words that start with s in this sentence'
+for word in st.split():
+    
+    if word[0]=='s':
+        print(word)
+
+#Problem 2: Go through the string below and if the length of a word is even print "even!"
+Code: 
+st = 'Print every word in this sentence that has an even number of letters'
+
+for word in st.split():
+    
+    if len(word)%2==0:
+        print(word+' has even number of letters!')
+
+#Problem 3: Write a program that prints the integers from 1 to 100. But for multiples of three print "Fizz" instead of the number, and for the multiples of five print "Buzz". For numbers which are 
+multiples of both three and five print "FizzBuzz".
+Code: 
+for num in range(1,101):
+    if num%3==0 and num%5==0:
+        print('FizzBuzz')
+    elif num%5==0:
+        print('Buzz')
+    elif num%3==0:
+        print('Fizz')
+    else:
+        print(num)
+		
+#Problem 4: Use a List Comprehension to create a list of the first letters of every word in the string below:
+Code: 
+st = 'Create a list of the first letters of every word in this string'
+[word[0] for word in st.split()]
