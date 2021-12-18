@@ -1,6 +1,6 @@
 #Section 1: Python Statements
 
-#Problem 1: Use for, .split(), and if to create a Statement that will print out words that start with 's':
+#Problem 1: Use for, .split(), and if to create a Statement that will print out words in a sentence that start with 's':
 #Code: 
 st = 'Print only the words that start with s in this sentence'
 for word in st.split():
@@ -47,13 +47,13 @@ def check_even_list(num_list):
     
     return numbering
     
-#Problem 6: ANIMAL CRACKERS: Write a function takes a two-word string and returns True if both words begin with same letter
+#Problem 6: Write a function takes a two-word string and returns True if both words begin with same letter. 
 #Code: 
 def animal(text):
     wordlist = text.split()
     return wordlist[0][0]==wordlist[1][0]
     
-#Problem 7: OLD MACDONALD: Write a function that capitalizes the first and fourth letters of a name
+#Problem 7: OLD MACDONALD: Write a function that capitalizes the first and fourth letters of a name. 
 #Code: 
 def cap(name):
     if len(name)>3:
@@ -61,7 +61,7 @@ def cap(name):
     else:
         print("too short!")
 	
-#Problem 8: Given a sentence, return a sentence with the words reversed
+#Problem 8: Given a sentence, return a sentence with the words reversed. 
 #Code: 
 def revsentence(text):
     return ' '.join(text.split()[::-1])	
@@ -77,7 +77,7 @@ def has33(nums):
 #Problem 10: BLACKJACK: Given three integers between 1 and 11, 
 if their sum is less than or equal to 21, return their sum. If 
 their sum exceeds 21 and there's an eleven, reduce the total sum by 10. 
-Finally, if the sum (even after adjustment) exceeds 21, return 'BUST'
+Finally, if the sum (even after adjustment) exceeds 21, return 'BUST'. 
 #Code: 
 def blackjack(a,b,c):
     if sum((a,b,c))<=21:
