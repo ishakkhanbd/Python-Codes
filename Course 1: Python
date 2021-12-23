@@ -35,6 +35,8 @@ for num in range(1,101):
 st = 'Create a list of the first letters of every word in this string'
 [word[0] for word in st.split()]
 
+#Section 2: Functions
+
 #Problem 5: Find if there is an even number in a list. Return the even numbers.  
 #Code: 
 def check_even_list(num_list):
@@ -135,4 +137,21 @@ def count_primes2(num):
             x += 2
     print(primes)
     return len(primes)
+    
+#Problem 14: Return the unique elements of a list.
+#Code: 
+def unique_list(lst):
+   
+    x = []
+    for a in lst:
+        if a not in x:
+            x.append(a)
+    return x
+    
+#Problem 15: Find whether a string is palindrome.
+#Code:
+def palindrome(s):
+    
+    s = s.replace(' ','') 
+    return s == s[::-1]
 
